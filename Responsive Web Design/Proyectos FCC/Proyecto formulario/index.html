@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto formulario</title>
+</head>
+<body>
+    <h1 id="title">Encuesta de satisfacción</h1>
+    <p id="description">Gracias por tomarse su tiempo para darnos su opinión</p>
+    <form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Nombre: <input type="text" id="name" required name="name" placeholder="Gabriel González"></label>
+        <label for="email" id="email-label">Correo electrónico: <input type="email" id="email" required name="email" placeholder="gagore@gmail.com"></label>
+        <label for="number" id="number-label">Edad: <input type="number" id="number" min="13" max="120" name="number" placeholder="18"></label>
+        <label for="dropdown">Ocupación: </select></label>
+        <select name="dropdown" id="dropdown">
+            <option value="">(selecciona opción)</option>
+            <option value="1">Estudiante</option>
+            <option value="2">Egresado</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <p>Recomedarías esta página a alguien más?:</p>
+        <label for="radio"><input type="radio" id="si" name="recomendacion" value="si">Sí</label>
+        <label for="radio"><input type="radio" id="no" name="recomendacion" value="no">No</label>
+    </fieldset>
+    <fieldset>
+        <p>Qué aspectos de la página te gustaron?</p>
+        <label for="checkbox"><input type="checkbox" value="diseño">Diseño</label>
+        <label for="checkbox"><input type="checkbox" value="presentacion">Presentación</label>
+        <label for="checkbox"><input type="checkbox" value="Contenido">Contenido</label>
+        <p>Quieres dar tu opinión?</p>
+        <label for="textarea"><textarea id="opinion" rows="3" cols="30" placeholder="Deja un comentario" name="opinion"></textarea></label>
+    </fieldset>
+    <input type="submit" id="submit">
+</form>
+    
+    
+</body>
+</html>
