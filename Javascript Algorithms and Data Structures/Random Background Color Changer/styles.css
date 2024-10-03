@@ -11,6 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #000000;
+    /*Animación al cambiar el color de fondo*/
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -47,12 +48,14 @@ button{
     border-radius: 20px;
     background-color: #007bff;
     color: white;
+    /*Animación inicial para cuando se quita el cursor*/
     transition: transform 0.3s ease-in-out;
 }
 
 button:hover{
     background-color: #0056b3;
     transform: scale(1.1);
+    /*Animación al pasar el cursor encima*/
     transition: transform 0.3s ease-in-out;
     
 }
