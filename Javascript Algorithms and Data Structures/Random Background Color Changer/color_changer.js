@@ -7,6 +7,7 @@ const colorsArray = [
     "purple",
     "orange",
     "pink",
+    "black",
 ]
 
 // Se seleccionan los elementos del DOM
