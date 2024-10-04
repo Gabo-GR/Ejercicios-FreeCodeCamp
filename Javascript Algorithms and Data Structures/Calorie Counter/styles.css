@@ -1,0 +1,60 @@
+body{
+    font-family: consolas, sans-serif;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #000000;
+}
+
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-family: consolas, sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+label{
+    padding-right: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+button:hover{
+    background-color: #45a049;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
