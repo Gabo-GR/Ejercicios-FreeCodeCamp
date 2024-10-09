@@ -60,7 +60,25 @@ fieldset,label,button,input,select {
   margin-bottom: 10px;
 }
 
-.output span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
+.output {
+    border: 2px solid gray;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .output span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .surplus {
+    color: lightpink;
+  }
+  
+  .deficit {
+    color: green;
+  }
