@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 15px 0 20px;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 3em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+.rules-container{
+    padding: 10px 0;
+    margin: auto;
+    background-color:cadetblue;
+    border: 5px solid white;
+    border-radius: 10px;
+}
