@@ -85,6 +85,21 @@ let userData = {
     songCurrentTime: 0,
 };
 
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+    audio.src = song.src;
+    audio.title = song.title;
+    if(userData?.currentSong === null || userData?.currentSong.id !== song.id) {
+        audio.currentTime = 0;
+    }
+    else {
+        audio.currentTime = userData?.songCurrentTime;
+    }
+    userData.currentSong = song;
+    playButton.classList.add("playing");
+    audio.play();
+};  
+
 const printGreeting = () => {
     console.log("Hello there!");
 }
@@ -124,6 +139,15 @@ const renderSongs = (array) => {
 };
 
 const sortSongs =() => {
-    userData?.songs.sort((a,b) => {});
-}
-renderSongs(userData?.songs);
+    userData?.songs.sort((a,b) => {;
+    if(a.title < b.title) {
+        return -1;
+    }
+    if(a.title > b.title) {
+        return 1;
+    }
+    return 0;
+});
+return userData?.songs;
+};
+renderSongs(sortSongs());
